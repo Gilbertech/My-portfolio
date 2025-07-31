@@ -465,17 +465,24 @@ p {
   opacity: 1;
 }
 
-/* Default: Hide the menu */
+/* Hide mobile menu by default */
 .nav-menu {
   display: none;
   flex-direction: column;
+  background-color: white;
   position: absolute;
-  top: 60px; /* adjust as needed */
-  right: 0;
-  background: #fff;
+  top: 60px; /* adjust depending on your layout */
+  left: 0;
   width: 100%;
   z-index: 999;
+  padding: 1rem;
 }
+
+/* Show menu when checkbox is checked */
+.mobile-menu-toggle:checked ~ .nav-menu {
+  display: flex;
+}
+
 
 /* Show menu if checkbox is checked */
 .mobile-menu-toggle:checked ~ .nav-container .nav-menu {
