@@ -465,29 +465,31 @@ p {
   opacity: 1;
 }
 
-/* Hide menu by default on mobile */
+/* Default: Hide the menu */
 .nav-menu {
   display: none;
   flex-direction: column;
-  background-color: #fff; /* or your desired background */
   position: absolute;
-  top: 60px; /* adjust based on your navbar height */
+  top: 60px; /* adjust as needed */
   right: 0;
+  background: #fff;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
 }
 
-/* Show menu when checkbox is checked */
+/* Show menu if checkbox is checked */
 .mobile-menu-toggle:checked ~ .nav-container .nav-menu {
   display: flex;
 }
 
-/* Hamburger icon styling */
+/* Hamburger */
 .hamburger {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+  justify-content: center;
   gap: 5px;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .hamburger .bar {
@@ -496,18 +498,22 @@ p {
   background-color: #333;
 }
 
-/* Desktop view */
+/* Hide checkbox input */
+.mobile-menu-toggle {
+  display: none;
+}
+
+/* Desktop styles */
 @media (min-width: 768px) {
   .nav-menu {
     display: flex !important;
     flex-direction: row;
     position: static;
-    width: auto;
     background: none;
+    width: auto;
   }
 
-  .hamburger,
-  .mobile-menu-toggle {
+  .hamburger {
     display: none;
   }
 }
