@@ -1,4 +1,3 @@
-# My-portfolio
 # Gilbert Ngaruiya - Portfolio Website
 
 A modern, responsive portfolio website showcasing my skills as a Frontend Developer with expertise in cybersecurity and networking. Built with clean HTML, CSS, and JavaScript, featuring a dark/light theme toggle and smooth animations.
