@@ -478,6 +478,8 @@ p {
   gap: 5px;
   cursor: pointer;
   padding: 10px;
+  z-index: 1001;
+  position: relative;
 }
 
 .hamburger .bar {
@@ -487,16 +489,17 @@ p {
   transition: all 0.3s ease;
 }
 
-/* Hide the nav-menu by default on mobile */
+/* Nav menu (mobile) */
 .nav-menu {
   display: none;
   flex-direction: column;
+  background-color: white;
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
-  background-color: white;
-  z-index: 999;
+  z-index: 1000;
+  padding: 1rem 0;
 }
 
 /* ✅ Show menu when checkbox is checked */
@@ -518,6 +521,7 @@ p {
     width: auto;
   }
 }
+
 
 
 /* Hero Section */
