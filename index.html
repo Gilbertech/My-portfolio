@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="https://i.ibb.co/PG1bgxJX/cropped-DSC-2567.jpg" />
+    <title>Gilbert Ngaruiya - Frontend Developer | Portfolio</title>
+   
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="profile-photo-loader">
+                <img src="https://i.ibb.co/PG1bgxJX/cropped-DSC-2567.jpg" alt="Gilbert Ngaruiya" />
+                <div class="loading-ring"></div>
+            </div>
+            <div class="loading-text">
+                <h2>GILBERT NGARUIYA</h2>
+                <p>Frontend Developer</p>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Theme Toggle Input -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-input" />
+
+    <!-- Mobile Menu Toggle -->
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" />
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <div class="logo-container">
+                    <img src="https://i.ibb.co/PG1bgxJX/cropped-DSC-2567.jpg" alt="Gilbert Ngaruiya" class="logo-image" />
+                    <span class="logo-text">GN</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ai-expertise" class="nav-link">AI Expertise</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <label for="theme-toggle" class="theme-toggle-label" aria-label="Toggle dark mode">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </li>
+            </ul>
+            <label for="mobile-menu-toggle" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <strong><span class="highlight">Gilbert Ngaruiya</span></strong>
+                </h1>
+                <h2 class="hero-subtitle"><strong>Frontend Developer</strong></h2>
+                <p class="hero-description">
+                    I create beautiful, responsive web applications using modern technologies like React, Vue, and TypeScript. 
+                    Passionate about clean code, user experience, and bringing ideas to life through code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="spinning-profile">
+                    <div class="profile-ring">
+                        <div class="profile-photo">
+                            <img src="images\Gilbert.jpg" alt="Gilbert Ngaruiya - Frontend Developer" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-intro">
+                    <div class="about-stats">
+                        <div class="stat-item">
+<div class="stat-number">10+</div>
+<div class="stat-label">Completed Projects</div>
+                        </div>
+                       
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-description-wrapper">
+                        <p class="about-description">
+I’m a dedicated Frontend Developer skilled in building responsive, user-centric web applications. I hold a Diploma in ICT from Murang'a University and possess specialized certifications in networking and web development.
+
+                        </p>
+                        <p class="about-description">
+                            My expertise spans across frontend development, networking, and ethical hacking. 
+                            I'm certified in Cisco Networking and Ethical Hacking, combining technical development 
+                            skills with strong cybersecurity knowledge.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-details">
+                    <div class="education-section">
+                        <h3><span class="section-icon">🎓</span> Education & Certifications</h3>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="education-icon">🏛️</div>
+                                <div class="education-content">
+                                    <strong> ICT Technician Diploma</strong>
+                                    <span>Murang'a University of Technology</span>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-icon">🔒</div>
+                                <div class="education-content">
+                                    <strong>Cisco Ethical Hacking Certification</strong>
+                                    <span>Cybersecurity Specialist</span>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-icon">🌐</div>
+                                <div class="education-content">
+                                    <strong>Cisco Networking Path Certification</strong>
+                                    <span>Network Administration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <h3><span class="section-icon">⚡</span> Technologies I work with</h3>
+                        <div class="tech-categories">
+                            <div class="tech-category-group">
+                                <h4>Frontend</h4>
+                                <div class="tech-list">
+                                    <span class="tech-item">JavaScript</span>
+                                    <span class="tech-item">TypeScript</span>
+                                    <span class="tech-item">React</span>
+                                    <span class="tech-item">Vue.js</span>
+                                    <span class="tech-item">HTML5</span>
+                                    <span class="tech-item">CSS3</span>
+                                </div>
+                            </div>
+                            <div class="tech-category-group">
+                                <h4>Backend & Tools</h4>
+                                <div class="tech-list">
+                                    <span class="tech-item">Node.js</span>
+                                    <span class="tech-item">Git</span>
+                                    <span class="tech-item">Networking</span>
+                                    <span class="tech-item">Cybersecurity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-actions">
+                        <a href="https://gilbert-ngaruiya-njambi.tiiny.site" class="btn btn-primary" download>
+                            📄 Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            💬 Let's Talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\vermi.jpeg" alt="Vermi Farm Management System" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Gilbertech/vermi-farm" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    🔗 Live Demo
+                                </a>
+                                <a href="https://github.com/Gilbertech/vermi-farm" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    📱 GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Vermi Farm Management System</h3>
+                        <p class="project-description">
+                            A comprehensive farm management system for vermiculture operations. Features include inventory tracking, 
+                            production monitoring, and analytics dashboard for optimizing worm farming operations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Typescript</span>
+                            <span class="tech-tag">Vue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\portfolio.jpeg" alt="Personal Portfolio Website" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Gilbertech/portfolio" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    🔗 Live Demo
+                                </a>
+                                <a href="https://github.com/Gilbertech/portfolio" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    📱 GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-description">
+                            A modern, responsive portfolio website showcasing my projects and skills. 
+                            Built with clean code practices and optimized for performance and SEO.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">vue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\pos.jpeg" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Gilbertech/POS-System.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    🔗 Live Demo
+                                </a>
+                                <a href="https://github.com/Gilbertech/POS-System.git class="project-link" target="_blank" rel="noopener noreferrer">
+                                    📱 GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Point Of Sale</h3>
+                        <p class="project-description">
+The web application is specifically designed for supermarkets to effectively manage their products and customer carts. It offers a range of features tailored to streamline supermarket operations. 
+                           
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Typescript</span>
+                            <span class="tech-tag">Html</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">⚛️</div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💚</div>
+                            <span class="skill-name">Vue.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🟨</div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔷</div>
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Networking & Security</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">🌐</div>
+                            <span class="skill-name">Network Administration</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔒</div>
+                            <span class="skill-name">Ethical Hacking</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🛡️</div>
+                            <span class="skill-name">Cybersecurity</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔧</div>
+                            <span class="skill-name">Cisco Technologies</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">🔧</div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📦</div>
+                            <span class="skill-name">Webpack</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚀</div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🤖</div>
+                            <span class="skill-name">AI Integration</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">💡</div>
+                            <span class="skill-name">Problem Solving</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">👥</div>
+                            <span class="skill-name">Team Collaboration</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎯</div>
+                            <span class="skill-name">Project Management</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📢</div>
+                            <span class="skill-name">Communication</span>
+                            <div class="skill-level">
+                                <div class="skill-bar skill-85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Expertise Section -->
+    <section id="ai-expertise" class="ai-expertise">
+        <div class="container">
+            <h2 class="section-title">AI Expertise</h2>
+            <div class="ai-content">
+                <div class="ai-description">
+                    <p>I specialize in integrating artificial intelligence solutions into web applications, 
+                       creating intelligent user experiences and automated systems.</p>
+                </div>
+                <div class="ai-skills-grid">
+                    <div class="ai-skill-card">
+                        <div class="ai-skill-icon">🤖</div>
+                        <h3>Machine Learning Integration</h3>
+                        <p>Implementing ML models in web applications for predictive analytics and intelligent features.</p>
+                    </div>
+                    <div class="ai-skill-card">
+                        <div class="ai-skill-icon">💬</div>
+                        <h3>Chatbot Development</h3>
+                        <p>Building conversational AI interfaces using natural language processing technologies.</p>
+                    </div>
+                    <div class="ai-skill-card">
+                        <div class="ai-skill-icon">📊</div>
+                        <h3>Data Analysis & Visualization</h3>
+                        <p>Creating intelligent dashboards with AI-powered insights and automated reporting.</p>
+                    </div>
+                    <div class="ai-skill-card">
+                        <div class="ai-skill-icon">🔍</div>
+                        <h3>Computer Vision</h3>
+                        <p>Implementing image recognition and processing capabilities in web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What People Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Gilbert delivered an exceptional vermi farm management system for our business. His attention to detail and technical expertise in both frontend development and networking made him invaluable to our project."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Royford Mutegi</h4>
+                            <span>Managing Director, Vermi Farm</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with Gilbert was a pleasure. His knowledge of cybersecurity and ethical hacking helped us build a secure platform. He's professional, reliable, and delivers quality work on time."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Gregory Odhiambo</h4>
+                            <span>Data Scientist</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Gilbert's expertise in React and modern web technologies helped transform our outdated system into a modern, responsive application. His problem-solving skills are outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Boniface Mbogho</h4>
+                            <span>Backend Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Blog Section -->
+    <section id="blog" class="blog">
+       
+        <div class="container">
+            <h2 class="section-title"> My Latest Articles</h2>
+            <div class="blog-description">
+                <p>I share insights about frontend development, cybersecurity, networking, and emerging technologies. 
+                   Stay tuned for in-depth articles and tutorials.</p>
+            </div>
+            
+            <!-- Blog Tab Navigation -->
+            <div class="blog-tabs">
+                <input type="radio" name="blog-tab" id="frontend-tab" checked />
+                <input type="radio" name="blog-tab" id="security-tab" />
+                <input type="radio" name="blog-tab" id="networking-tab" />
+              
+                <div class="tab-buttons">
+                    <label for="frontend-tab" class="tab-button">Frontend Development</label>
+                    <label for="security-tab" class="tab-button">Cybersecurity</label>
+                    <label for="networking-tab" class="tab-button">Networking</label>
+                   
+                </div>
+                
+                <div class="tab-content">
+                    <!-- Frontend Tab -->
+                    <div class="tab-panel" id="frontend-content">
+                        <div class="articles-grid">
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>React Best Practices 2025</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">React</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">React Best Practices for 2025</h3>
+                                    <p class="article-excerpt">
+                                        Discover the latest React patterns, hooks optimization, and performance techniques 
+                                        that every developer should know.
+                                    </p>
+                                    <input type="checkbox" id="react-toggle" class="read-more-toggle">
+                                    <label for="react-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>Modern React Development Practices</h4>
+                                        <p>React continues to evolve, and staying updated with best practices is crucial for building maintainable applications. In 2025, several key patterns have emerged as industry standards.</p>
+                                        
+                                        <h4>1. Custom Hooks for Logic Reuse</h4>
+                                        <p>Custom hooks remain one of the most powerful patterns in React. They allow you to extract component logic into reusable functions, making your code more modular and testable.</p>
+                                        
+                                        <h4>2. React Server Components</h4>
+                                        <p>Server Components are revolutionizing how we think about React applications. They enable rendering components on the server, reducing bundle size and improving performance.</p>
+                                        
+                                        <h4>3. Concurrent Features</h4>
+                                        <p>Features like <code>useTransition</code>, <code>useDeferredValue</code>, and <code>Suspense</code> help create more responsive user interfaces by allowing React to interrupt rendering work.</p>
+                                        
+                                        <h4>4. State Management Evolution</h4>
+                                        <p>Modern state management has shifted towards lighter solutions. Context API with <code>useReducer</code> often suffices for complex state, while libraries like Zustand offer simpler alternatives to Redux.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>Modern CSS Techniques</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">CSS</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">Modern CSS Techniques Every Developer Should Know</h3>
+                                    <p class="article-excerpt">
+                                        Explore CSS Grid, Flexbox, custom properties, and the latest CSS features 
+                                        for building responsive layouts.
+                                    </p>
+                                    <input type="checkbox" id="css-toggle" class="read-more-toggle">
+                                    <label for="css-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>Advanced CSS Layout Techniques</h4>
+                                        <p>CSS has evolved dramatically, offering powerful layout systems that make creating responsive designs easier than ever before.</p>
+                                        
+                                        <h4>1. CSS Grid for Complex Layouts</h4>
+                                        <p>CSS Grid excels at creating two-dimensional layouts. Use <code>grid-template-areas</code> for readable layout definitions and <code>minmax()</code> for responsive column sizing.</p>
+                                        
+                                        <h4>2. Flexbox for Component Layout</h4>
+                                        <p>Flexbox remains essential for one-dimensional layouts. The <code>gap</code> property has revolutionized spacing in flex containers, eliminating the need for margin hacks.</p>
+                                        
+                                        <h4>3. Custom Properties (CSS Variables)</h4>
+                                        <p>CSS custom properties enable dynamic theming and reduce repetition. They cascade and can be manipulated with JavaScript, unlike preprocessor variables.</p>
+                                        
+                                        <h4>4. Container Queries</h4>
+                                        <p>Container queries allow components to respond to their container's size rather than the viewport, enabling truly modular responsive design.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>TypeScript Complete Guide</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">TypeScript</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">TypeScript: From Beginner to Advanced</h3>
+                                    <p class="article-excerpt">
+                                        A comprehensive guide to TypeScript, covering types, interfaces, generics, 
+                                        and advanced patterns.
+                                    </p>
+                                    <input type="checkbox" id="typescript-toggle" class="read-more-toggle">
+                                    <label for="typescript-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>Mastering TypeScript Development</h4>
+                                        <p>TypeScript has become the standard for large-scale JavaScript applications, providing type safety and enhanced developer experience.</p>
+                                        
+                                        <h4>1. Type System Fundamentals</h4>
+                                        <p>Understanding primitive types, union types, and intersection types forms the foundation of effective TypeScript usage. The <code>unknown</code> type is safer than <code>any</code> for handling uncertain data.</p>
+                                        
+                                        <h4>2. Interfaces vs Type Aliases</h4>
+                                        <p>While interfaces and type aliases overlap in functionality, interfaces are better for object shapes that might be extended, while type aliases excel at union types and computed types.</p>
+                                        
+                                        <h4>3. Generic Programming</h4>
+                                        <p>Generics enable writing reusable, type-safe code. Advanced patterns like conditional types and mapped types unlock powerful abstractions.</p>
+                                        
+                                        <h4>4. Utility Types and Advanced Patterns</h4>
+                                        <p>TypeScript's built-in utility types like <code>Pick</code>, <code>Omit</code>, and <code>Partial</code> reduce boilerplate. Template literal types enable sophisticated string manipulation at the type level.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Security Tab -->
+                    <div class="tab-panel" id="security-content">
+                        <div class="articles-grid">
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>Ethical Hacking Basics</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">Ethical Hacking</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">Ethical Hacking: A Beginner's Guide</h3>
+                                    <p class="article-excerpt">
+                                        Learn the fundamentals of ethical hacking, penetration testing, 
+                                        and cybersecurity best practices.
+                                    </p>
+                                    <input type="checkbox" id="ethical-hacking-toggle" class="read-more-toggle">
+                                    <label for="ethical-hacking-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>Introduction to Ethical Hacking</h4>
+                                        <p>Ethical hacking involves authorized testing of systems to identify vulnerabilities before malicious actors can exploit them. It's a critical component of modern cybersecurity.</p>
+                                        
+                                        <h4>1. Reconnaissance Phase</h4>
+                                        <p>Information gathering is the foundation of any security assessment. This involves passive and active reconnaissance to understand the target's attack surface.</p>
+                                        
+                                        <h4>2. Vulnerability Assessment</h4>
+                                        <p>Systematic identification of security weaknesses using automated tools and manual testing techniques. This phase maps potential entry points.</p>
+                                        
+                                        <h4>3. Exploitation and Post-Exploitation</h4>
+                                        <p>Carefully controlled exploitation of identified vulnerabilities to demonstrate impact. Post-exploitation involves understanding the scope of compromise.</p>
+                                        
+                                        <h4>4. Reporting and Remediation</h4>
+                                        <p>Clear documentation of findings with risk ratings and remediation recommendations. The goal is to help organizations improve their security posture.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>Web Application Security</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">Web Security</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">Securing Web Applications: Common Vulnerabilities</h3>
+                                    <p class="article-excerpt">
+                                        Explore OWASP Top 10 vulnerabilities and learn how to protect 
+                                        your web applications from common attacks.
+                                    </p>
+                                    <input type="checkbox" id="web-security-toggle" class="read-more-toggle">
+                                    <label for="web-security-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>Web Application Security Fundamentals</h4>
+                                        <p>Web applications face numerous security threats. Understanding the OWASP Top 10 vulnerabilities is essential for building secure applications.</p>
+                                        
+                                        <h4>1. Injection Attacks</h4>
+                                        <p>SQL injection, NoSQL injection, and command injection remain prevalent. Use parameterized queries and input validation to prevent these attacks.</p>
+                                        
+                                        <h4>2. Broken Authentication</h4>
+                                        <p>Weak authentication mechanisms lead to account compromise. Implement strong password policies, multi-factor authentication, and secure session management.</p>
+                                        
+                                        <h4>3. Cross-Site Scripting (XSS)</h4>
+                                        <p>XSS attacks inject malicious scripts into web pages. Implement Content Security Policy (CSP) and proper output encoding to mitigate these risks.</p>
+                                        
+                                        <h4>4. Security Headers and HTTPS</h4>
+                                        <p>Security headers like HSTS, X-Frame-Options, and X-Content-Type-Options provide additional protection layers. Always use HTTPS for sensitive data transmission.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>Cisco Security Fundamentals</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">Cisco</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">Cisco Security Fundamentals</h3>
+                                    <p class="article-excerpt">
+                                        Deep dive into Cisco security technologies, firewalls, 
+                                        and network protection strategies.
+                                    </p>
+                                    <input type="checkbox" id="cisco-security-toggle" class="read-more-toggle">
+                                    <label for="cisco-security-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>Cisco Network Security Architecture</h4>
+                                        <p>Cisco provides comprehensive security solutions for enterprise networks, from firewalls to intrusion prevention systems.</p>
+                                        
+                                        <h4>1. ASA Firewalls</h4>
+                                        <p>Cisco ASA (Adaptive Security Appliance) provides stateful firewall services, VPN capabilities, and intrusion prevention. Understanding security levels and access control lists is crucial.</p>
+                                        
+                                        <h4>2. Identity Services Engine (ISE)</h4>
+                                        <p>ISE provides centralized policy management and network access control. It enables zero-trust network architecture through dynamic policy enforcement.</p>
+                                        
+                                        <h4>3. Threat Detection and Response</h4>
+                                        <p>Cisco's security portfolio includes threat intelligence, malware analysis, and incident response capabilities through platforms like SecureX.</p>
+                                        
+                                        <h4>4. Secure Network Design</h4>
+                                        <p>Implementing defense-in-depth strategies with multiple security layers. This includes network segmentation, micro-segmentation, and zero-trust principles.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Networking Tab -->
+                    <div class="tab-panel" id="networking-content">
+                        <div class="articles-grid">
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>Network Fundamentals</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">Networking</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">Network Fundamentals: OSI Model Explained</h3>
+                                    <p class="article-excerpt">
+                                        Understanding the seven layers of the OSI model and how data 
+                                        flows through network infrastructure.
+                                    </p>
+                                    <input type="checkbox" id="osi-model-toggle" class="read-more-toggle">
+                                    <label for="osi-model-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>The OSI Reference Model</h4>
+                                        <p>The Open Systems Interconnection (OSI) model provides a conceptual framework for understanding network communications across seven distinct layers.</p>
+                                        
+                                        <h4>1. Physical Layer (Layer 1)</h4>
+                                        <p>Deals with the physical transmission of raw bits over communication channels. This includes cables, connectors, voltages, and timing specifications.</p>
+                                        
+                                        <h4>2. Data Link Layer (Layer 2)</h4>
+                                        <p>Provides node-to-node delivery and error detection/correction. Ethernet, Wi-Fi, and switching operate at this layer. MAC addresses identify devices locally.</p>
+                                        
+                                        <h4>3. Network Layer (Layer 3)</h4>
+                                        <p>Handles routing and logical addressing through IP addresses. Routers operate at this layer, determining the best path for data across networks.</p>
+                                        
+                                        <h4>4. Transport Layer (Layer 4)</h4>
+                                        <p>Provides end-to-end communication services. TCP ensures reliable delivery while UDP offers faster, connectionless communication.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>Cisco CCNA Guide</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">Cisco</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">CCNA Study Guide: Routing and Switching</h3>
+                                    <p class="article-excerpt">
+                                        Complete guide to Cisco routing and switching concepts, 
+                                        VLANs, and network troubleshooting.
+                                    </p>
+                                    <input type="checkbox" id="ccna-toggle" class="read-more-toggle">
+                                    <label for="ccna-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>CCNA Routing and Switching Fundamentals</h4>
+                                        <p>The CCNA certification validates foundational networking skills including routing protocols, switching concepts, and network troubleshooting.</p>
+                                        
+                                        <h4>1. VLAN Configuration</h4>
+                                        <p>Virtual LANs segment networks logically. Understanding VLAN trunking, access ports, and inter-VLAN routing is essential for network design.</p>
+                                        
+                                        <h4>2. Routing Protocols</h4>
+                                        <p>OSPF and EIGRP are modern routing protocols that automatically exchange routing information. Each has distinct characteristics for network convergence and scalability.</p>
+                                        
+                                        <h4>3. Spanning Tree Protocol</h4>
+                                        <p>STP prevents switching loops in redundant topologies. RSTP and MST provide faster convergence and better utilization of redundant links.</p>
+                                        
+                                        <h4>4. Network Services</h4>
+                                        <p>DHCP, DNS, and NAT are critical network services. Understanding their configuration and troubleshooting is vital for network operations.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <div>Network Troubleshooting</div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">Troubleshooting</span>
+                                        <span class="article-date">July 2025</span>
+                                    </div>
+                                    <h3 class="article-title">Network Troubleshooting Methodologies</h3>
+                                    <p class="article-excerpt">
+                                        Learn systematic approaches to diagnosing and resolving 
+                                        network connectivity issues.
+                                    </p>
+                                    <input type="checkbox" id="troubleshooting-toggle" class="read-more-toggle">
+                                    <label for="troubleshooting-toggle" class="read-more"></label>
+                                    <div class="article-full">
+                                        <h4>Systematic Network Troubleshooting</h4>
+                                        <p>Effective network troubleshooting requires a structured approach to quickly identify and resolve connectivity issues.</p>
+
+                                        <h4>1. Problem Identification</h4>
+                                        <p>Clearly define the problem scope. Gather information about symptoms, affected users, and recent changes. Document the problem statement precisely.</p>
+
+                                        <h4>2. OSI Layer Approach</h4>
+                                        <p>Use the OSI model to systematically check each layer. Start with physical connectivity (Layer 1) and work up through data link, network, transport, and so on.</p>
+
+                                        <h4>3. Divide and Conquer</h4>
+                                        <p>Isolate the issue by testing different segments of the network. Use tools like <code>ping</code>, <code>traceroute</code>, <code>netstat</code>, and <code>ipconfig</code>/<code>ifconfig</code> to narrow down the location of the problem.</p>
+
+                                        <h4>4. Documentation and Prevention</h4>
+                                        <p>Keep detailed records of troubleshooting steps, tools used, and outcomes. Use this data to implement preventative measures, train others, and improve future responses.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+ </section>
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's work together!</h3>
+                <p>I'm always interested in new opportunities and exciting projects. 
+                   Whether you have a question or just want to say hi, feel free to reach out!</p>
+                
+                <div class="contact-links">
+                    <a href="mailto:gilbertngaruiya@gmail.com" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        gilbertngaruiya@gmail.com
+                    </a>
+                    <a href="tel:+254768299985" class="contact-link">
+                        <span class="contact-icon">📱</span>
+                        +254 768 299 985
+                    </a>
+                    <a href="https://wa.me/254768299985" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">💬</span>
+                        WhatsApp
+                    </a>
+                    <a href="https://www.linkedin.com/in/gilbert-ngaruiya-a08762375/" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">💼</span>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Gilbertech" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">🐱</span>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Add this BEFORE your main form, hidden from users -->
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="tel" name="phone" />
+  <textarea name="message"></textarea>
+</form>
+
+  <!-- form Section -->
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thankyou.html" class="contact-form">
+    <input type="hidden" name="form-name" value="contact" />
+
+    
+    <p style="display:none;">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+
+    <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name" autocomplete="name" />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email" />
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254 XXX XXX XXX" autocomplete="tel" />
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="submitBtn">
+        <span class="btn-text">Send Message</span>
+    </button>
+</form>
+</section>
+<!-- Scroll to top button -->
+    <a href="#home" class="scroll-to-top">⬆</a>
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gilbert Ngaruiya. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
