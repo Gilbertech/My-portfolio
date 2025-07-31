@@ -465,63 +465,115 @@ p {
   opacity: 1;
 }
 
-/* Hide the checkbox */
-.mobile-menu-toggle {
-  position: absolute;
-  left: -9999px;
-}
 
-/* Hamburger styles */
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1001;
-  position: relative;
-}
 
-.hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  transition: all 0.3s ease;
-}
+    nav.navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      padding: 1rem;
+    }
 
-/* Nav menu (mobile) */
-.nav-menu {
-  display: none;
-  flex-direction: column;
-  background-color: white;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 1rem 0;
-}
+    /* Hide checkbox but keep functional */
+    .mobile-menu-toggle {
+      position: absolute;
+      left: -9999px;
+    }
 
-/* ✅ Show menu when checkbox is checked */
-.mobile-menu-toggle:checked ~ .nav-container .nav-menu {
-  display: flex;
-}
+    /* Hamburger */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 1001;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
 
-/* Desktop view */
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
+    .hamburger .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+    }
 
-  .nav-menu {
-    display: flex !important;
-    flex-direction: row;
-    position: static;
-    background: none;
-    width: auto;
-  }
-}
+    /* Logo container */
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
 
+    .logo-image {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Container and nav */
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    ul.nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+      margin-top: 1rem;
+    }
+
+    ul.nav-menu li {
+      list-style: none;
+    }
+
+    ul.nav-menu li a {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      color: #333;
+      border-top: 1px solid #eee;
+    }
+
+    /* ✅ Show menu when checkbox is checked */
+    .mobile-menu-toggle:checked + .hamburger + .nav-container .nav-menu {
+      display: flex;
+    }
+
+    /* Desktop styles */
+    @media (min-width: 768px) {
+      .hamburger {
+        display: none;
+      }
+
+      .nav-container {
+        flex-wrap: nowrap;
+      }
+
+      ul.nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        background: none;
+      }
+
+      ul.nav-menu li a {
+        border: none;
+        padding: 0 1rem;
+      }
+    }
 
 
 /* Hero Section */
