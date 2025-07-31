@@ -15,7 +15,7 @@ A modern, responsive portfolio website showcasing my skills as a Frontend Develo
 
 ## 🚀 Live Demo
 
-Visit the live website: 
+Visit the live website: https://portfoliogilbert.netlify.app/
 
 ## 📋 Sections
 
