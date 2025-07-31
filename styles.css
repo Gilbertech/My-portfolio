@@ -465,61 +465,7 @@ p {
   opacity: 1;
 }
 
-/* Hide mobile menu by default */
-.nav-menu {
-  display: none;
-  flex-direction: column;
-  background-color: white;
-  position: absolute;
-  top: 60px; /* adjust depending on your layout */
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  padding: 1rem;
-}
 
-/* Show menu when checkbox is checked */
-.mobile-menu-toggle:checked ~ .nav-menu {
-  display: flex;
-}
-
-
-/* Show menu if checkbox is checked */
-.mobile-menu-toggle:checked ~ .nav-container .nav-menu {
-  display: flex;
-}
-
-/* Hamburger */
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-}
-
-
-/* Desktop styles */
-@media (min-width: 768px) {
-  .nav-menu {
-    display: flex !important;
-    flex-direction: row;
-    position: static;
-    background: none;
-    width: auto;
-  }
-
-  .hamburger {
-    display: none;
-  }
-}
 
 /* Hero Section */
 .hero {
