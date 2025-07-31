@@ -465,11 +465,7 @@ p {
   opacity: 1;
 }
 
-/* Hide the checkbox */
-.mobile-menu-toggle {
-  position: absolute;
-  left: -9999px;
-}
+
 
 
 
