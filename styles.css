@@ -498,10 +498,6 @@ p {
   background-color: #333;
 }
 
-/* Hide checkbox input */
-.mobile-menu-toggle {
-  display: none;
-}
 
 /* Desktop styles */
 @media (min-width: 768px) {
