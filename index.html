@@ -41,20 +41,147 @@
     <input type="checkbox" id="theme-toggle" class="theme-toggle-input" />
 
 
-    <!-- Navigation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fixed Hamburger Menu</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-   <nav class="navbar">
-  <!-- Hidden Checkbox -->
+    body {
+      font-family: sans-serif;
+    }
+
+    nav.navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      padding: 1rem;
+    }
+
+    /* Hide checkbox but keep functional */
+    .mobile-menu-toggle {
+      position: absolute;
+      left: -9999px;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 1001;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .hamburger .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+    }
+
+    /* Logo container */
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-image {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Container and nav */
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    ul.nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+      margin-top: 1rem;
+    }
+
+    ul.nav-menu li {
+      list-style: none;
+    }
+
+    ul.nav-menu li a {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      color: #333;
+      border-top: 1px solid #eee;
+    }
+
+    /* ✅ Show menu when checkbox is checked */
+    .mobile-menu-toggle:checked + .hamburger + .nav-container .nav-menu {
+      display: flex;
+    }
+
+    /* Desktop styles */
+    @media (min-width: 768px) {
+      .hamburger {
+        display: none;
+      }
+
+      .nav-container {
+        flex-wrap: nowrap;
+      }
+
+      ul.nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        background: none;
+      }
+
+      ul.nav-menu li a {
+        border: none;
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <!-- ✅ Checkbox -->
   <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" />
 
-  <!-- Label (hamburger) comes after checkbox -->
+  <!-- ✅ Hamburger -->
   <label for="mobile-menu-toggle" class="hamburger">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
   </label>
 
-  <!-- Container with logo and menu -->
+  <!-- ✅ Container -->
   <div class="nav-container">
     <a href="#home" class="nav-logo">
       <div class="logo-container">
@@ -63,18 +190,23 @@
       </div>
     </a>
 
+    <!-- ✅ Menu -->
     <ul class="nav-menu">
-      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-      <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-      <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-      <li class="nav-item"><a href="#ai-expertise" class="nav-link">AI Expertise</a></li>
-      <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
-      <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
-      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#ai-expertise">AI Expertise</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
+
+</body>
+</html>
+
 
 
     <!-- Hero Section -->
