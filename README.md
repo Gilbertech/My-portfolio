@@ -11,7 +11,6 @@ A modern, responsive portfolio website showcasing my skills as a Frontend Develo
 - **Contact Form**: Netlify-powered contact form with spam protection
 - **Performance Optimized**: Fast loading with optimized images and CSS
 - **SEO Friendly**: Proper meta tags and semantic HTML structure
-- **Accessibility**: WCAG compliant with proper ARIA labels and keyboard navigation
 
 ## 🚀 Live Demo
 
@@ -74,7 +73,7 @@ The website uses CSS custom properties for easy theming. Main color variables ar
 ```html
 <div class="project-card">
   <div class="project-image">
-    <img src="images/your-project.jpg" alt="Project Name" />
+    <img src="pos.jpg" alt="Project Name" />
     <!-- ... overlay content -->
   </div>
   <!-- ... project content -->
