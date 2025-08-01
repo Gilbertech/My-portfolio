@@ -291,7 +291,6 @@ p {
   transform: translateY(-2px);
 }
 
-
 /* Navigation with Logo */
 .navbar {
   position: fixed;
@@ -465,9 +464,33 @@ p {
   opacity: 1;
 }
 
+/* Mobile Navigation */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
 
+.bar {
+  width: 1.5rem;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: var(--transition);
+}
 
+#mobile-menu-toggle:checked ~ .navbar .hamburger .bar:nth-child(1) {
+  transform: rotate(45deg) translate(0.375rem, 0.375rem);
+}
 
+#mobile-menu-toggle:checked ~ .navbar .hamburger .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu-toggle:checked ~ .navbar .hamburger .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(0.375rem, -0.375rem);
+}
 
 /* Hero Section */
 .hero {
