@@ -562,7 +562,7 @@ p {
     padding: 0 1rem;
   }
   
-  /* Make theme toggle smaller on mobile */
+ /* Make theme toggle smaller on mobile */
   .theme-toggle-label {
     width: 3rem;
     height: 1.75rem;
