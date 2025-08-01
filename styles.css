@@ -491,7 +491,103 @@ p {
 #mobile-menu-toggle:checked ~ .navbar .hamburger .bar:nth-child(3) {
   transform: rotate(-45deg) translate(0.375rem, -0.375rem);
 }
+/* Add this CSS to make your hamburger menu work on mobile */
 
+/* Hide the mobile menu toggle checkbox */
+#mobile-menu-toggle {
+  display: none;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  /* Show hamburger menu on mobile */
+  .hamburger {
+    display: flex !important;
+    z-index: 1001;
+  }
+  
+  /* Hide regular navigation menu on mobile */
+  .nav-menu {
+    position: fixed;
+    top: 4rem;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    transition: left 0.3s ease;
+    border-top: 1px solid var(--border-color);
+    gap: 1.5rem;
+  }
+  
+  /* Dark mode mobile menu background */
+  #theme-toggle:checked ~ .navbar .nav-menu {
+    background: rgba(15, 23, 42, 0.98);
+  }
+  
+  /* Show menu when hamburger is clicked */
+  #mobile-menu-toggle:checked ~ .navbar .nav-menu {
+    left: 0;
+  }
+  
+  /* Style mobile menu items */
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 1rem;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  
+  /* Reduce logo size on mobile */
+  .logo-image {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  
+  /* Adjust navigation container padding */
+  .nav-container {
+    padding: 0 1rem;
+  }
+  
+  /* Make theme toggle smaller on mobile */
+  .theme-toggle-label {
+    width: 3rem;
+    height: 1.75rem;
+  }
+  
+  .toggle-slider {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  #theme-toggle:checked ~ * .toggle-slider {
+    transform: translateX(1.25rem);
+  }
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .nav-container {
+    padding: 0 1.5rem;
+  }
+  
+  .nav-menu {
+    gap: 1.5rem;
+  }
+}
 /* Hero Section */
 .hero {
   min-height: 100vh;
