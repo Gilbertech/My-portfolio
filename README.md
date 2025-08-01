@@ -54,44 +54,36 @@ portfolio/
 ## 🎨 Customization
 
 ### Colors & Themes
-The website uses CSS custom properties for easy theming. Main color variables are defined in `:root`:
+The website uses CSS custom properties for easy theming. Main color variables are:
 
 ```css
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #1e40af;
-  --accent-color: #3b82f6;
-  --text-color: #1f2937;
-  --bg-color: #ffffff;
-  /* ... more variables */
+  --primary-color: #6366f1;
+  --primary-dark: #4338ca;
+  --secondary-color: #ec4899;
+  --accent-color: #f59e0b;
+  --success-color: #10b981;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --border-radius: 0.5rem;
+  --border-radius-lg: 1rem;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --heading-font: "Poppins", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --tech-font: "Orbitron", "Inter", monospace, sans-serif;
 }
+
 ```
 
-### Adding New Projects
-1. Add project images to the `images/` folder
-2. Update the projects section in `index.html`:
-```html
-<div class="project-card">
-  <div class="project-image">
-    <img src="pos.jpg" alt="Project Name" />
-    <!-- ... overlay content -->
-  </div>
-  <!-- ... project content -->
-</div>
-```
-
-### Blog Articles
-Add new articles in the blog section by following the existing structure:
-```html
-<article class="article-card">
-  <div class="article-image">
-    <div>Article Title</div>
-  </div>
-  <div class="article-content">
-    <!-- Article meta and content -->
-  </div>
-</article>
-```
 
 ## 📱 Browser Support
 
