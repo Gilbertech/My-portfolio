@@ -491,7 +491,6 @@ p {
 #mobile-menu-toggle:checked ~ .navbar .hamburger .bar:nth-child(3) {
   transform: rotate(-45deg) translate(0.375rem, -0.375rem);
 }
-/* Add this CSS to make your hamburger menu work on mobile */
 
 /* Hide the mobile menu toggle checkbox */
 #mobile-menu-toggle {
