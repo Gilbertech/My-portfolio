@@ -42,13 +42,12 @@ Visit the live website: https://portfoliogilbert.netlify.app/
 portfolio/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles
-├── script.js           # JavaScript functionality
+├── thankyou.html       # form functionality
 ├── images/             # Image assets
 │   ├── Gilbert.jpg
 │   ├── vermi.jpeg
 │   ├── portfolio.jpeg
 │   └── pos.jpeg
-├── favicon.ico         # Website favicon
 └── README.md          # Project documentation
 ```
 
